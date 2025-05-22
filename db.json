@@ -1,0 +1,25 @@
+{
+  "employees": [
+    {
+      "name": "Varun",
+      "email": "varun@gmail.com",
+      "salary": 77007,
+      "department": "Engineering",
+      "id": "5907"
+    },
+    {
+      "id": "0915",
+      "name": "Jacob",
+      "email": "jacob@gmail.com",
+      "salary": 12345,
+      "department": "Finance"
+    },
+    {
+      "id": "e582",
+      "name": "Snow",
+      "email": "snow@yahoo.co.in",
+      "salary": 12321,
+      "department": "HR"
+    }
+  ]
+}
