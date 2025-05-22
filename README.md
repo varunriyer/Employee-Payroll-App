@@ -1,4 +1,4 @@
-# ﻿Employee Payment App
+# ﻿Employee Payroll App
 Employee Payroll App : Develop an application that maintains the Employee
 Payroll Data. Ability to develop screens based on XD Design using HTML5,
 CSS3, JS, JQuery, ES9 and above, AJAX Call with JSONServer. Ability to
