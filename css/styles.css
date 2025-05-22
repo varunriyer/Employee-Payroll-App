@@ -1,74 +1,123 @@
+/* Reset and Base Styles */
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 1rem;
-    background-color: #f7f7f7;
+    background-color: #f4f6f8;
+    padding: 20px;
     color: #333;
 }
 
-header,
-#el {
+header {
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 20px;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    margin-bottom: 2rem;
-}
-
-input,
-button {
-    padding: 0.5rem;
-    font-size: 1rem;
-}
-
-button {
-    cursor: pointer;
-    background-color: #007bff;
-    color: white;
-    border: none;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1rem;
-}
-
-th,
-td {
-    padding: 0.75rem;
-    text-align: left;
-    border-bottom: 1px solid #ccc;
-}
-
-@media (min-width: 768px) {
-    form {
-        max-width: 400px;
-    }
+h1 {
+    font-size: 2rem;
+    color: #2c3e50;
 }
 
 main {
     display: flex;
-    gap: 2rem;
-    align-items: flex-start;
-    justify-content: space-between;
+    flex-direction: row;
+    gap: 20px;
 }
 
-#form-section,
-#table-section {
+/* Form and Table Section Layout */
+#form-section {
     flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
 
+#table-section {
+    flex: 2;
+    /* Give more space to Employee List */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+form input,
+form select {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #3498db;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #2980b9;
+}
+
+/* Search Box */
+#searchInput {
+    margin-bottom: 15px;
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table thead {
+    background-color: #ecf0f1;
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    #form-section,
+    #table-section {
+        width: 100%;
+    }
 }
