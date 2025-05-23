@@ -1,4 +1,3 @@
-/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -39,7 +38,6 @@ main {
 
 #table-section {
     flex: 2;
-    /* Give more space to Employee List */
     background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
