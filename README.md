@@ -22,7 +22,7 @@ Follow these steps to run the Employee Payroll App locally:
 
 ---
 
-### 📁 Step 1: Clone the Repository
+### Step 1: Clone the Repository
 
 ```bash
 git clone https://github.com/your-username/employee-payroll-app.git
