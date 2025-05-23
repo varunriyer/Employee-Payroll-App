@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let isEditing = false;
     let currentEditId = null;
-    let employees = []; // Cache employees data
+    let employees = [];
 
     const regexPatterns = {
         name: /^[A-Za-z\s]{3,50}$/,
@@ -123,7 +123,6 @@ document.addEventListener('DOMContentLoaded', () => {
             department
         };
 
-        // ✅ Check for duplicate email before POST or PUT
         const duplicate = employees.find(emp =>
             emp.email.toLowerCase() === email && emp.id !== currentEditId
         );
