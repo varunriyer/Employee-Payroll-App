@@ -27,16 +27,20 @@ Follow these steps to run the Employee Payroll App locally:
 ```bash
 git clone https://github.com/your-username/employee-payroll-app.git
 cd employee-payroll-app
-
-
-# Step 2: Install JSON Server
+```
+### Step 2: Install JSON Server
+```bash
 npm install -g json-server
+```
 
-# Step 3: Start the JSON Server
+### Step 3: Start the JSON Server
+```bash
 json-server --watch db.json --port 3000
+```
 
-# Step 4: (Optional) Start Live Server to view the app
+### Step 4: (Optional) Start Live Server to view the app
+```bash
 # If using VS Code, right-click index.html and choose 'Open with Live Server'
 # Or use any local HTTP server like:
 # python3 -m http.server
-
+```
